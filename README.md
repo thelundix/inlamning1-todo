@@ -19,6 +19,7 @@ cd server/TodoApi
 📦 Återställ paket och skapa dev-certifikat:
 
 dotnet restore
+
 dotnet dev-certs https --trust
 
 🔑 Sätt JWT-nyckeln (minst 32 tecken):
