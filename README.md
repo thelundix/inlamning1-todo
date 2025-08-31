@@ -13,8 +13,9 @@ Följ guiden nedan för att köra igång projektet lokalt.
 ### 1. Starta API-servern
 
 📂 Gå in i server-projektet:
-```bash
+
 cd server/TodoApi
+
 📦 Återställ paket och skapa dev-certifikat:
 
 dotnet restore
