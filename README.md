@@ -28,6 +28,9 @@ dotnet user-secrets init
 
 dotnet user-secrets set "Jwt:Key" "<lång-stark-hemlighet-minst-32-tecken>"
 
+✅ Verifiera att nyckeln sparats:
+dotnet user-secrets list
+
 ▶️ Kör API:et: dotnet run
 
 🌐 API:et startar på:
