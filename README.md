@@ -43,8 +43,7 @@ Lösenord: Admin!12345
 📂 Öppna en ny terminal och gå till klientmappen:
 
 cd client
+
 🌍 Starta en enkel webbserver:
 
-npx http-server -p 5500
-👉 Alternativt kan du använda VS Code Live Server
 (Högerklicka på index.html → Open with Live Server)
