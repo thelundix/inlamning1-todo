@@ -12,9 +12,7 @@ Följ guiden nedan för att köra igång projektet lokalt.
 
 ### 1. Starta API-servern
 
-📂 Gå in i server-projektet:
-
-cd server/TodoApi
+📂 Gå in i server-projektet: cd server/TodoApi
 
 📦 Återställ paket och skapa dev-certifikat:
 
@@ -26,9 +24,8 @@ dotnet dev-certs https --trust
 dotnet user-secrets init
 dotnet user-secrets set "Jwt:Key" "<lång-stark-hemlighet-minst-32-tecken>"
 
-▶️ Kör API:et:
+▶️ Kör API:et: dotnet run
 
-dotnet run
 🌐 API:et startar på:
 
 https://localhost:7088
