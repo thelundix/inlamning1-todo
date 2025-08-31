@@ -17,43 +17,33 @@ Följ guiden nedan för att köra igång projektet lokalt.
 cd server/TodoApi
 📦 Återställ paket och skapa dev-certifikat:
 
-bash
-Kopiera kod
 dotnet restore
 dotnet dev-certs https --trust
+
 🔑 Sätt JWT-nyckeln (minst 32 tecken):
 
-bash
-Kopiera kod
 dotnet user-secrets init
 dotnet user-secrets set "Jwt:Key" "<lång-stark-hemlighet-minst-32-tecken>"
+
 ▶️ Kör API:et:
 
-bash
-Kopiera kod
 dotnet run
 🌐 API:et startar på:
 
 https://localhost:7088
-
 http://localhost:5088
 
 👤 När databasen skapas första gången seedas ett administratörskonto:
 
 Användarnamn: admin
-
 Lösenord: Admin!12345
 
 2. Starta klienten
 📂 Öppna en ny terminal och gå till klientmappen:
 
-bash
-Kopiera kod
 cd client
 🌍 Starta en enkel webbserver:
 
-bash
-Kopiera kod
 npx http-server -p 5500
 👉 Alternativt kan du använda VS Code Live Server
 (Högerklicka på index.html → Open with Live Server)
