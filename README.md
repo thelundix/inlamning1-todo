@@ -1,47 +1,59 @@
 # ✅ Inlämning 1 — Todo API & Klient
 
-Detta projekt innehåller en server (Web API i .NET 8 + SQLite + JWT) och en klient (HTML, CSS, JavaScript). Följ stegen nedan för att köra igång allt lokalt.
+Detta projekt består av:  
+- ⚙️ **Server:** Web API i **.NET 8** + **SQLite** + **JWT-autentisering**  
+- 🌍 **Klient:** Byggd med **HTML, CSS och JavaScript**  
+
+Följ guiden nedan för att köra igång projektet lokalt.  
 
 ---
 
-## 🚀 Starta projektet
+## 🚀 Kom igång
 
-Gå in i server-projektet:
+### 1. Starta API-servern
+
+📂 Gå in i server-projektet:
 ```bash
 cd server/TodoApi
-Återställ paket och skapa dev-certifikat:
+📦 Återställ paket och skapa dev-certifikat:
 
 bash
 Kopiera kod
 dotnet restore
 dotnet dev-certs https --trust
-Sätt JWT-nyckeln (krävs minst 32 tecken):
+🔑 Sätt JWT-nyckeln (minst 32 tecken):
 
 bash
 Kopiera kod
 dotnet user-secrets init
 dotnet user-secrets set "Jwt:Key" "<lång-stark-hemlighet-minst-32-tecken>"
-Kör API:et:
+▶️ Kör API:et:
 
 bash
 Kopiera kod
 dotnet run
-API:et startar på:
+🌐 API:et startar på:
 
 https://localhost:7088
 
 http://localhost:5088
 
-När databasen skapas första gången seedas ett administratörskonto automatiskt:
+👤 När databasen skapas första gången seedas ett administratörskonto:
 
 Användarnamn: admin
 
 Lösenord: Admin!12345
 
-Öppna en ny terminal, gå till klientmappen och starta en enkel webbserver:
+2. Starta klienten
+📂 Öppna en ny terminal och gå till klientmappen:
 
 bash
 Kopiera kod
 cd client
+🌍 Starta en enkel webbserver:
+
+bash
+Kopiera kod
 npx http-server -p 5500
-Alternativt kan du använda VS Code Live Server (högerklicka på index.html → Open with Live Server).
+👉 Alternativt kan du använda VS Code Live Server
+(Högerklicka på index.html → Open with Live Server)
