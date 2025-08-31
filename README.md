@@ -25,6 +25,7 @@ dotnet dev-certs https --trust
 🔑 Sätt JWT-nyckeln (minst 32 tecken):
 
 dotnet user-secrets init
+
 dotnet user-secrets set "Jwt:Key" "<lång-stark-hemlighet-minst-32-tecken>"
 
 ▶️ Kör API:et: dotnet run
