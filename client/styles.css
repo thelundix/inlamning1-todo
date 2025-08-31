@@ -1,0 +1,12 @@
+*{box-sizing:border-box}body{font-family:system-ui,Segoe UI,Arial,sans-serif;max-width:720px;margin:0 auto;padding:24px}
+main{display:flex;flex-direction:column;gap:24px}
+form{display:flex;gap:8px;flex-wrap:wrap}
+input,select,button{padding:8px 12px;border:1px solid #ccc;border-radius:8px}
+button{cursor:pointer}
+.error{color:#b00020}
+.hint{color:#666}
+ul{list-style:none;padding:0}
+li{display:flex;align-items:center;justify-content:space-between;padding:8px;border:1px solid #eee;border-radius:8px;margin-top:8px}
+.tag{margin-left:8px;padding:2px 8px;border-radius:12px;background:#eee;font-size:12px}
+.done{opacity:.6;text-decoration:line-through}
+header{display:flex;align-items:center;justify-content:space-between}

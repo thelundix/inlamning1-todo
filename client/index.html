@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Todo – JWT klient</title>
+    <!-- Stram CSP för att minska XSS-risker -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src https://localhost:7088 https://localhost:5001 http://localhost:5088; img-src 'self'; style-src 'self'; script-src 'self'; frame-ancestors 'none'; base-uri 'none'; form-action 'self'">
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <section id="auth">
+        <h1>Logga in</h1>
+        <form id="login-form">
+          <input id="username" placeholder="Användarnamn" autocomplete="username" required />
+          <input id="password" type="password" placeholder="Lösenord" autocomplete="current-password" required />
+          <button type="submit">Logga in</button>
+        </form>
+        <p id="login-error" class="error" hidden>Fel användarnamn eller lösenord.</p>
+      </section>
+
+      <section id="app" hidden>
+        <header>
+          <div>
+            <strong id="who"></strong>
+            <span id="roleTag" class="tag"></span>
+          </div>
+          <button id="logout">Logga ut</button>
+        </header>
+
+        <div id="admin" hidden>
+          <h2>Admin: Lägg till användare</h2>
+          <form id="add-user-form">
+            <input id="new-username" placeholder="Nytt användarnamn" required />
+            <input id="new-password" type="password" placeholder="Nytt lösenord" required />
+            <select id="new-role">
+              <option>User</option>
+              <option>Admin</option>
+            </select>
+            <button type="submit">Skapa</button>
+          </form>
+          <p id="add-user-msg" class="hint"></p>
+        </div>
+
+        <h2>Att göra</h2>
+        <form id="todo-form">
+          <input id="todo-title" placeholder="Vad ska göras?" maxlength="200" required />
+          <button type="submit">Lägg till</button>
+        </form>
+        <ul id="todo-list"></ul>
+      </section>
+    </main>
+
+    <script src="./app.js" defer></script>
+  </body>
+</html>

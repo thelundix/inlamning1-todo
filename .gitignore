@@ -1,0 +1,33 @@
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.vs/
+
+# .NET
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+
+# Certs
+*.pfx
+
+# Logs
+*.log
+logs/
+
+# SQLite (lokala databaser)
+*.db
+*.sqlite
+*.db-wal
+*.db-shm
+
+# Env / secrets (i fall någon lagt dem lokalt)
+*.env
+secrets.json
+
+# Frontend (om du börjar bygga)
+dist/
+node_modules/
