@@ -7,6 +7,7 @@
 Återställ paket och skapa dev-certifikat:
 
 dotnet restore
+
 dotnet dev-certs https --trust
 
 Sätt JWT-nyckeln (krävs minst 32 tecken):
