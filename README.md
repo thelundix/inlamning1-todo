@@ -4,8 +4,6 @@ Detta projekt består av:
 - ⚙️ **Server:** Web API i **.NET 8** + **SQLite** + **JWT-autentisering**  + **SSL** + **Kestrel/HTTPS & request limits** + **CORS** + **Password hashing** + **Rate limiting** + **DB ensure och seed admin** + **EnsureCreated** 
 - 🌍 **Klient:** Byggd med **HTML, CSS och JavaScript**  
 
-Följ guiden nedan för att köra igång projektet lokalt.  
-
 ---
 
 ## 🚀 Kom igång
