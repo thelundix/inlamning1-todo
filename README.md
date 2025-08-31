@@ -1,7 +1,7 @@
 # ✅ Inlämning 1 — Todo API & Klient
 
 Detta projekt består av:  
-- ⚙️ **Server:** Web API i **.NET 8** + **SQLite** + **JWT-autentisering**  + SSL 
+- ⚙️ **Server:** Web API i **.NET 8** + **SQLite** + **JWT-autentisering**  + **SSL** 
 - 🌍 **Klient:** Byggd med **HTML, CSS och JavaScript**  
 
 Följ guiden nedan för att köra igång projektet lokalt.  
